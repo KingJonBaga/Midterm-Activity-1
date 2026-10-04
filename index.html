@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purrora — Luxury Cat Café</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+ 
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-symbol">✦</span>
+      <span class="nav__logo-text">Purrora</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#cats">Our Cats</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reserve">Reserve</a></li>
+    </ul>
+    <a href="#reserve" class="nav__cta">Book a Visit</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#menu" class="mobile-link">Menu</a></li>
+      <li><a href="#cats" class="mobile-link">Our Cats</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#reserve" class="mobile-link">Reserve</a></li>
+    </ul>
+  </div>
+
+ 
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img
+        src="https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+        alt="Cozy cat café interior"
+        class="hero__img"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Est. 2024 · A Sanctuary for Souls &amp; Strays</p>
+      <h1 class="hero__headline">
+        Where Luxury<br />
+        <em>Meets Purr</em>
+      </h1>
+      <p class="hero__sub">Artisan coffee. Rescued cats. Unhurried afternoons.</p>
+      <div class="hero__actions">
+        <a href="#reserve" class="btn btn--primary">Reserve Your Table</a>
+        <a href="#about" class="btn btn--ghost">Discover More</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+    <div class="hero__badge">
+      <svg viewBox="0 0 100 100" class="hero__badge-ring">
+        <path id="circlePath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+        <text><textPath href="#circlePath" startOffset="0%">LUXURY CAT CAFÉ · PURRORA · EST. 2024 · </textPath></text>
+      </svg>
+      <span class="hero__badge-icon">🐾</span>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Artisan Coffee</span><span class="marquee__dot">✦</span>
+      <span>Rescue Cats</span><span class="marquee__dot">✦</span>
+      <span>Curated Pastries</span><span class="marquee__dot">✦</span>
+      <span>Mindful Moments</span><span class="marquee__dot">✦</span>
+      <span>Feline Therapy</span><span class="marquee__dot">✦</span>
+      <span>Slow Mornings</span><span class="marquee__dot">✦</span>
+      <span>Artisan Coffee</span><span class="marquee__dot">✦</span>
+      <span>Rescue Cats</span><span class="marquee__dot">✦</span>
+      <span>Curated Pastries</span><span class="marquee__dot">✦</span>
+      <span>Mindful Moments</span><span class="marquee__dot">✦</span>
+      <span>Feline Therapy</span><span class="marquee__dot">✦</span>
+      <span>Slow Mornings</span><span class="marquee__dot">✦</span>
+    </div>
+  </div>
+
+ 
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__images">
+        <div class="about__img-large reveal">
+          <img src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Cat lounging in café" />
+        </div>
+        <div class="about__img-small reveal reveal--delay">
+          <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop" alt="Coffee and cat" />
+          <div class="about__stat">
+            <span class="about__stat-num">24</span>
+            <span class="about__stat-label">Rescue Cats<br/>in Residence</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__copy reveal">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">A Café Built on<br /><em>Compassion &amp; Craft</em></h2>
+        <p class="about__text">
+          Purrora began as a dream shared between two cat lovers and a barista — a space where specialty coffee and the calming presence of cats could coexist in genuine luxury. Every corner is designed for lingering.
+        </p>
+        <p class="about__text">
+          All 24 of our resident cats are rescued and fully vetted. Many are available for adoption. Your visit doesn't just fuel your day — it changes theirs.
+        </p>
+        <div class="about__stats-row">
+          <div class="about__mini-stat">
+            <strong>5+</strong>
+            <span>Years of Purring</span>
+          </div>
+          <div class="about__mini-stat">
+            <strong>180+</strong>
+            <span>Cats Rehomed</span>
+          </div>
+          <div class="about__mini-stat">
+            <strong>4.9★</strong>
+            <span>Guest Rating</span>
+          </div>
+        </div>
+        <a href="#reserve" class="btn btn--primary">Visit Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="experience">
+    <div class="experience__inner">
+      <p class="section-eyebrow" style="text-align:center">The Purrora Experience</p>
+      <h2 class="section-title" style="text-align:center">Everything You Need<br /><em>To Unwind</em></h2>
+      <div class="experience__cards">
+        <div class="experience__card reveal">
+          <div class="experience__card-icon">☕</div>
+          <h3>Specialty Coffee</h3>
+          <p>Single-origin beans sourced from ethical farms, brewed by our award-winning baristas.</p>
+        </div>
+        <div class="experience__card reveal reveal--delay">
+          <div class="experience__card-icon">🐱</div>
+          <h3>Feline Companions</h3>
+          <p>24 rescue cats roam freely. Let them come to you. No rushing, no noise policies enforced.</p>
+        </div>
+        <div class="experience__card reveal reveal--delay2">
+          <div class="experience__card-icon">🥐</div>
+          <h3>Artisan Pastries</h3>
+          <p>Daily-baked croissants, tarts, and seasonal cakes made in-house from local ingredients.</p>
+        </div>
+        <div class="experience__card reveal reveal--delay3">
+          <div class="experience__card-icon">📖</div>
+          <h3>Curated Library</h3>
+          <p>Over 300 books, from fiction to philosophy. Borrow, read, return — or adopt one home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="menu" id="menu">
+    <div class="menu__header">
+      <p class="section-eyebrow">What We Serve</p>
+      <h2 class="section-title">The Purrora<br /><em>Menu</em></h2>
+    </div>
+    <div class="menu__tabs">
+      <button class="menu__tab active" data-tab="drinks">Drinks</button>
+      <button class="menu__tab" data-tab="food">Bites</button>
+      <button class="menu__tab" data-tab="specials">Specials</button>
+    </div>
+    <div class="menu__panels">
+
+      <!-- Drinks -->
+      <div class="menu__panel active" id="tab-drinks">
+        <div class="menu__grid">
+          <div class="menu__item reveal">
+            <div class="menu__item-img">
+              
+              <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Espresso" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Black Velvet Espresso</h4>
+              <p>Double shot, dark roast, served with a square of 72% cacao chocolate</p>
+              <span class="menu__price">₱180</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay">
+            <div class="menu__item-img">
+              
+              <img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/06/iced-matcha-latte-recipe-580x743.jpg" alt="Matcha latte" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Ceremonial Matcha Latte</h4>
+              <p>Grade A ceremonial matcha whisked with oat milk, lightly sweetened</p>
+              <span class="menu__price">₱220</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay2">
+            <div class="menu__item-img">
+             
+              <img src="https://images.pexels.com/photos/350478/pexels-photo-350478.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Cappuccino" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Rosette Cappuccino</h4>
+              <p>Silky micro-foam, single origin Ethiopian beans, dusted with cinnamon</p>
+              <span class="menu__price">₱195</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay3">
+            <div class="menu__item-img">
+              
+              <img src="https://images.pexels.com/photos/1187317/pexels-photo-1187317.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Lavender latte" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Lavender Honey Latte</h4>
+              <p>House-made lavender syrup, raw honey, whole milk steamed to perfection</p>
+              <span class="menu__price">₱230</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="menu__panel" id="tab-food">
+        <div class="menu__grid">
+          <div class="menu__item reveal">
+            <div class="menu__item-img">
+              <img src="https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Croissant" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Butter Croissant</h4>
+              <p>Laminated dough, 72-hour cold fermentation, served warm with cultured butter</p>
+              <span class="menu__price">₱145</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay">
+            <div class="menu__item-img">
+              <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tart" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Yuzu Lemon Tart</h4>
+              <p>Pâte sucrée shell, yuzu-lemon curd, Italian meringue torched tableside</p>
+              <span class="menu__price">₱185</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay2">
+            <div class="menu__item-img">
+              <img src="https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="French toast" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Brioche French Toast</h4>
+              <p>Thick-cut brioche, vanilla custard soak, seasonal compote and whipped cream</p>
+              <span class="menu__price">₱265</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay3">
+            <div class="menu__item-img">
+              <img src="https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Avocado toast" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Smashed Avo Toast</h4>
+              <p>Sourdough, Hass avocado, cherry tomato, poached egg, dukkah crumb</p>
+              <span class="menu__price">₱250</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="menu__panel" id="tab-specials">
+        <div class="menu__grid">
+          <div class="menu__item reveal">
+            <div class="menu__item-img">
+              <img src="https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Afternoon set" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Purrfect Afternoon Set</h4>
+              <p>Coffee or tea + pastry of choice + 60-min cat room access — for two</p>
+              <span class="menu__price">₱680</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay">
+            <div class="menu__item-img">
+              <img src="https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Celebration cake" />
+            </div>
+            <div class="menu__item-info">
+              <h4>Whiskers &amp; Wishes Cake</h4>
+              <p>Custom cat-shaped celebration cake, 24-hour pre-order, serves 6–8</p>
+              <span class="menu__price">₱1,200</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay2">
+            <div class="menu__item-img">
+              <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Brunch plate" />
+            </div>
+            <div class="menu__item-info">
+              <h4>The Lazy Kitty Brunch</h4>
+              <p>Full brunch board — eggs, meats, pastries, fruit, and your coffee pick</p>
+              <span class="menu__price">₱480</span>
+            </div>
+          </div>
+          <div class="menu__item reveal reveal--delay3">
+            <div class="menu__item-img">
+              <img src="https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tea set" />
+            </div>
+            <div class="menu__item-info">
+              <h4>High Tea for Two</h4>
+              <p>Tiered stand of finger sandwiches, scones, petit fours, and loose-leaf tea</p>
+              <span class="menu__price">₱790</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="cats" id="cats">
+    <div class="cats__header">
+      <p class="section-eyebrow">The Residents</p>
+      <h2 class="section-title">Meet Our<br /><em>Feline Family</em></h2>
+      <p class="cats__sub">Each cat has a story. Some are bold adventurers, others are quiet companions. All of them are waiting to meet you.</p>
+    </div>
+    <div class="cats__scroll-wrapper">
+      <div class="cats__track">
+
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Mochi the cat" />
+            <div class="cat-card__badge">Available for Adoption</div>
+          </div>
+          <div class="cat-card__info">
+            <h4>Mochi</h4>
+            <p>Scottish Fold · 2 yrs · ♀</p>
+            <span class="cat-card__trait">Cuddly</span>
+            <span class="cat-card__trait">Playful</span>
+          </div>
+        </div>
+
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Biscuit the cat" />
+          </div>
+          <div class="cat-card__info">
+            <h4>Biscuit</h4>
+            <p>Tabby Mix · 4 yrs · ♂</p>
+            <span class="cat-card__trait">Calm</span>
+            <span class="cat-card__trait">Bookish</span>
+          </div>
+        </div>
+
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Luna the cat" />
+            <div class="cat-card__badge">Available for Adoption</div>
+          </div>
+          <div class="cat-card__info">
+            <h4>Luna</h4>
+            <p>Siamese Mix · 1 yr · ♀</p>
+            <span class="cat-card__trait">Curious</span>
+            <span class="cat-card__trait">Social</span>
+          </div>
+        </div>
+
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Earl Grey the cat" />
+          </div>
+          <div class="cat-card__info">
+            <h4>Earl Grey</h4>
+            <p>Russian Blue · 6 yrs · ♂</p>
+            <span class="cat-card__trait">Regal</span>
+            <span class="cat-card__trait">Quiet</span>
+          </div>
+        </div>
+
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Truffle the cat" />
+            <div class="cat-card__badge">Available for Adoption</div>
+          </div>
+          <div class="cat-card__info">
+            <h4>Truffle</h4>
+            <p>Maine Coon · 3 yrs · ♀</p>
+            <span class="cat-card__trait">Majestic</span>
+            <span class="cat-card__trait">Gentle</span>
+          </div>
+        </div>
+
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Cheddar the cat" />
+          </div>
+          <div class="cat-card__info">
+            <h4>Cheddar</h4>
+            <p>Orange Tabby · 5 yrs · ♂</p>
+            <span class="cat-card__trait">Mischievous</span>
+            <span class="cat-card__trait">Loud</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="cats__nav">
+      <button class="cats__nav-btn" id="catsPrev" aria-label="Previous">←</button>
+      <button class="cats__nav-btn" id="catsNext" aria-label="Next">→</button>
+    </div>
+  </section>
+
+  
+  <section class="gallery" id="gallery">
+    <div class="gallery__header reveal">
+      <p class="section-eyebrow">Inside Purrora</p>
+      <h2 class="section-title">A Space Made<br /><em>for Staying</em></h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall reveal">
+        <img src="https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg?auto=compress&cs=tinysrgb&w=800&h=560&fit=crop" alt="Café interior" />
+        <div class="gallery__overlay">Interior</div>
+      </div>
+      <div class="gallery__item reveal reveal--delay">
+        <img src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=800&h=280&fit=crop" alt="Cat in café" />
+        <div class="gallery__overlay">The Details</div>
+      </div>
+      <div class="gallery__item reveal reveal--delay2">
+        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800&h=280&fit=crop" alt="Coffee art" />
+        <div class="gallery__overlay">Craft Coffee</div>
+      </div>
+      <div class="gallery__item gallery__item--wide reveal reveal--delay">
+        <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=1200&h=280&fit=crop" alt="Cat playing" />
+        <div class="gallery__overlay">The Residents</div>
+      </div>
+      <div class="gallery__item reveal reveal--delay2">
+        <img src="https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=800&h=280&fit=crop" alt="Pastries" />
+        <div class="gallery__overlay">From the Kitchen</div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="testimonials">
+    <div class="testimonials__inner">
+      <p class="section-eyebrow" style="text-align:center">Guest Stories</p>
+      <div class="testimonials__cards">
+        <div class="testimonials__card reveal">
+          <div class="testimonials__stars">★★★★★</div>
+          <p>"Earl Grey sat on my laptop for 45 minutes. Best meeting I've ever had."</p>
+          <div class="testimonials__author">
+            <strong>— Claudia R.</strong>
+            <span>Regular Guest</span>
+          </div>
+        </div>
+        <div class="testimonials__card reveal reveal--delay">
+          <div class="testimonials__stars">★★★★★</div>
+          <p>"The lavender latte and a purring Mochi on my lap — I forgot the entire week existed."</p>
+          <div class="testimonials__author">
+            <strong>— Marcus T.</strong>
+            <span>First-time visitor</span>
+          </div>
+        </div>
+        <div class="testimonials__card reveal reveal--delay2">
+          <div class="testimonials__stars">★★★★★</div>
+          <p>"We adopted Luna after our third visit. She fit right in. Purrora changed our family."</p>
+          <div class="testimonials__author">
+            <strong>— The Santos Family</strong>
+            <span>Adopters · Feb 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="reserve" id="reserve">
+    <div class="reserve__bg">
+      <img src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=1920&h=900&fit=crop" alt="Café ambiance" />
+      <div class="reserve__overlay"></div>
+    </div>
+    <div class="reserve__content">
+      <div class="reserve__copy reveal">
+        <p class="section-eyebrow" style="color: var(--gold)">Make a Reservation</p>
+        <h2 class="section-title" style="color: var(--cream)">Secure Your<br /><em>Afternoon</em></h2>
+        <p style="color: var(--cream-60); margin-top: 1.5rem; font-family: var(--font-sans); font-weight: 300; line-height: 1.8;">
+          Tables fill quickly on weekends. We recommend booking at least 2 days in advance. Walk-ins welcome based on availability.
+        </p>
+        <div class="reserve__info">
+          <div>
+            <strong>Hours</strong>
+            <span>Mon – Fri · 9 AM – 9 PM</span>
+            <span>Sat – Sun · 8 AM – 10 PM</span>
+          </div>
+          <div>
+            <strong>Location</strong>
+            <span>12 Whisker Lane</span>
+            <span>Makati, Metro Manila</span>
+          </div>
+        </div>
+      </div>
+      <form class="reserve__form reveal reveal--delay" id="reserveForm" novalidate>
+        <h3>Reserve a Table</h3>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Sofia" required />
+          </div>
+          <div class="form__group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Cruz" required />
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="sofia@example.com" required />
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form__group">
+            <label for="time">Preferred Time</label>
+            <select id="time" name="time">
+              <option value="">Select a slot</option>
+              <option>9:00 AM</option>
+              <option>10:30 AM</option>
+              <option>12:00 PM</option>
+              <option>2:00 PM</option>
+              <option>4:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:30 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests">
+              <option>1 guest</option>
+              <option>2 guests</option>
+              <option>3 guests</option>
+              <option>4 guests</option>
+              <option>5+ guests</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="package">Package</label>
+            <select id="package" name="package">
+              <option>Standard Visit</option>
+              <option>Afternoon Set</option>
+              <option>High Tea for Two</option>
+              <option>Private Event</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="notes">Special Requests</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Allergies, celebrations, accessibility needs..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Confirm Reservation</button>
+        <div class="form__success" id="formSuccess">
+          <span>🐾</span> Your table is reserved! See you soon.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span>✦</span> Purrora
+        </div>
+        <p>A luxury cat café where rescued cats meet artisan coffee in a space designed for unhurried moments.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#cats">Our Cats</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Policies</h5>
+        <ul>
+          <li><a href="#">Cat Interaction Rules</a></li>
+          <li><a href="#">Adoption Process</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+          <li><a href="#">Private Events</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Contact</h5>
+        <ul>
+          <li>12 Whisker Lane, Makati</li>
+          <li>hello@purrora.com</li>
+          <li>+63 917 000 0000</li>
+          <li>Mon–Sun · 9 AM – 10 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Purrora Cat Café. All rights reserved.</p>
+      <p>Designed with love for cats everywhere 🐾</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
