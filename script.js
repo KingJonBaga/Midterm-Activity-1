@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnPrev.addEventListener('click', () => goTo(currentIndex - 1));
     btnNext.addEventListener('click', () => goTo(currentIndex + 1));
 
-    // Drag-to-scroll
+
     let startX = 0, isDragging = false, dragDelta = 0;
 
     const dragStart = (e) => {
