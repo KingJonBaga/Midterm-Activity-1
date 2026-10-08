@@ -1,16 +1,16 @@
 
 :root {
-  --forest:     #1a2318;   /* deep forest green — primary bg */
-  --forest-mid: #243022;   /* slightly lighter green */
-  --forest-light: #2e3d2b; /* card/section bg */
-  --gold:       #c9a96e;   /* warm gold accent */
-  --gold-light: #e8c98a;   /* lighter gold for hover */
-  --cream:      #f5f0e8;   /* warm cream text */
+  --forest:     #1a2318;   
+  --forest-mid: #243022;   
+  --forest-light: #2e3d2b; 
+  --gold:       #c9a96e;   
+  --gold-light: #e8c98a;   
+  --cream:      #f5f0e8;   
   --cream-60:   rgba(245,240,232,0.6);
   --cream-30:   rgba(245,240,232,0.3);
   --cream-10:   rgba(245,240,232,0.1);
-  --charcoal:   #111612;   /* deepest bg */
-  --rust:       #8b4513;   /* accent warm */
+  --charcoal:   #111612;   
+  --rust:       #8b4513;   
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'Jost', 'Helvetica Neue', sans-serif;
@@ -782,7 +782,7 @@ ul { list-style: none; }
   color: rgba(245,240,232,0.7);
 }
 
-/* Form */
+
 .reserve__form {
   background: var(--forest-light);
   border: 1px solid var(--cream-10);
