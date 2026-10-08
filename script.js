@@ -1,10 +1,8 @@
-/* ═══════════════════════════════════════════════════════════════════════════
-   PURRORA — Luxury Cat Café  |  JavaScript
-═══════════════════════════════════════════════════════════════════════════ */
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ─── SCROLLED NAV ─────────────────────────────────────────────────────── */
+ 
   const nav = document.getElementById('nav');
   const onScroll = () => {
     nav.classList.toggle('scrolled', window.scrollY > 40);
@@ -12,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* ─── HERO IMAGE SCALE-IN ──────────────────────────────────────────────── */
+
   const heroImg = document.querySelector('.hero__img');
   if (heroImg) {
     if (heroImg.complete) {
@@ -22,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* ─── MOBILE MENU ──────────────────────────────────────────────────────── */
+ 
   const hamburger   = document.getElementById('hamburger');
   const mobileMenu  = document.getElementById('mobileMenu');
   const mobileClose = document.getElementById('mobileClose');
@@ -141,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const form        = document.getElementById('reserveForm');
   const formSuccess = document.getElementById('formSuccess');
 
-  // Set min date to today
+ 
   const dateInput = document.getElementById('date');
   if (dateInput) {
     const today = new Date().toISOString().split('T')[0];
